@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/logomark-blue.png">
+  <title>Columbus Daycare & Preschool | The Barrington School</title>
+  <meta name="description" content="Premium childcare in Columbus, OH with chef-prepared organic meals, diapers included, and weekly enrichment classes. 12 locations. Schedule your tour today.">
+  <meta property="og:title" content="Columbus Daycare & Preschool | The Barrington School">
+  <meta property="og:description" content="Chef-prepared organic meals, diapers included, weekly enrichment classes, and below-state ratios. Family-owned for 50+ years across 12 Columbus-area locations.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://www.thebarringtonschool.com">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Editorial serif display + Raleway body (serif is a deliberate departure from Brand Book, flagged for reconciliation) -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ChildCare",
+    "name": "The Barrington School",
+    "description": "Family-owned early childhood education with chef-prepared organic meals, included essentials, weekly enrichment classes, and below-state-minimum student-to-teacher ratios.",
+    "url": "https://www.thebarringtonschool.com",
+    "telephone": "+16147910500",
+    "email": "info@barringtonschool.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Columbus", "addressRegion": "OH", "addressCountry": "US" },
+    "areaServed": ["Dublin","Powell","Hilliard","Upper Arlington","Worthington","Columbus","Grandview","New Albany","Jerome Village","Plain City"],
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.5", "reviewCount": "77" },
+    "sameAs": ["https://www.facebook.com/TheBarringtonSchool/","https://www.instagram.com/barringtonschooljerome/"]
+  }
+  </script>
+
+  <style>
+    :root {
+      /* === Premium palette — warm neutrals + deep ink + champagne === */
+      --ink:        #20264f;  /* Barrington Blue, deepened — used as ink accent, not surface */
+      --ink-soft:   #3a4170;
+      --champagne:  #b08d57;  /* refined warm gold accent */
+      --champagne-dk:#94733f;
+      --ivory:      #faf7f1;  /* primary warm base */
+      --ivory-dk:   #f1ece1;  /* alt section */
+      --stone:      #e7e0d3;  /* hairlines, borders */
+      --cream:      #ffffff;
+      --text:       #2c2a26;  /* warm near-black */
+      --text-muted: #6f6a60;  /* warm muted */
+      --baby-blue:  #92c5ea;  /* retained from brand, very sparing */
+
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body:    'Raleway', sans-serif;
+
+      --maxw: 1240px;
+      --space-sm:1rem; --space-md:1.5rem; --space-lg:2.5rem; --space-xl:5rem; --space-2xl:8rem;
+      --radius: 2px; /* near-square — refined, not playful */
+    }
+    *{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:var(--font-body);color:var(--text);background:var(--ivory);font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased;font-weight:400;}
+    img{display:block;max-width:100%;}
+    a{color:var(--ink);text-decoration:none;}
+    .container{max-width:var(--maxw);margin:0 auto;padding:0 var(--space-lg);}
+
+    h1,h2,h3{font-family:var(--font-display);font-weight:500;line-height:1.08;letter-spacing:.005em;color:var(--ink);}
+    h1{font-size:clamp(2.8rem,6.5vw,5.5rem);font-weight:400;}
+    h2{font-size:clamp(2rem,4.2vw,3.4rem);font-weight:400;}
+    h3{font-size:clamp(1.5rem,2.4vw,2rem);font-weight:500;}
+    p{font-size:1.0625rem;}
+    .lead{font-size:1.25rem;line-height:1.7;font-weight:300;color:var(--text-muted);}
+    .eyebrow{font-family:var(--font-body);font-size:.75rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--champagne-dk);display:inline-block;margin-bottom:1.5rem;}
+    .eyebrow::before{content:"";display:inline-block;width:32px;height:1px;background:var(--champagne);vertical-align:middle;margin-right:14px;}
+
+    .skip-link{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:12px 20px;z-index:1000;}
+    .skip-link:focus{left:0;}
+
+    /* Buttons — refined, square-ish, letterspaced */
+    .btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-body);font-weight:600;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;padding:18px 36px;border-radius:var(--radius);border:1px solid transparent;cursor:pointer;transition:all .25s ease;}
+    .btn-primary{background:var(--ink);color:var(--ivory);}
+    .btn-primary:hover{background:var(--ink-soft);}
+    .btn-gold{background:var(--champagne);color:#fff;}
+    .btn-gold:hover{background:var(--champagne-dk);}
+    .btn-outline{background:transparent;color:var(--ink);border-color:var(--ink);}
+    .btn-outline:hover{background:var(--ink);color:var(--ivory);}
+    .btn-outline-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.55);}
+    .btn-outline-light:hover{background:rgba(255,255,255,.12);border-color:#fff;}
+    .link-arrow{font-family:var(--font-body);font-weight:600;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);display:inline-flex;align-items:center;gap:8px;border-bottom:1px solid var(--champagne);padding-bottom:4px;transition:gap .2s;}
+    .link-arrow:hover{gap:14px;}
+
+    /* ===== Header ===== */
+    .topbar{background:var(--ink);color:rgba(255,255,255,.85);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;}
+    .topbar .container{display:flex;justify-content:space-between;align-items:center;padding:10px var(--space-lg);gap:var(--space-md);}
+    .topbar a{color:rgba(255,255,255,.85);font-weight:500;}
+    .topbar a:hover{color:#fff;}
+    .topbar-links{display:flex;gap:var(--space-lg);align-items:center;flex-wrap:wrap;}
+
+    header.site{position:sticky;top:0;z-index:100;background:rgba(250,247,241,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--stone);transition:box-shadow .3s;}
+    header.site.scrolled{box-shadow:0 6px 30px rgba(32,38,79,.08);}
+    nav.primary{display:flex;align-items:center;justify-content:space-between;padding:1.4rem var(--space-lg);max-width:var(--maxw);margin:0 auto;gap:var(--space-md);}
+    .logo{display:flex;align-items:center;gap:14px;}
+    .logo-mark{width:46px;height:46px;border:1px solid var(--champagne);color:var(--ink);display:grid;place-items:center;font-family:var(--font-display);font-weight:600;font-size:1.5rem;}
+    .logo-text{font-family:var(--font-display);font-weight:500;color:var(--ink);font-size:1.45rem;line-height:1;}
+    .logo-text small{display:block;font-family:var(--font-body);font-size:.6rem;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--champagne-dk);margin-top:5px;}
+
+    .nav-links{display:flex;align-items:center;gap:var(--space-lg);list-style:none;}
+    .nav-links>li{position:relative;}
+    .nav-links>li>a,.nav-links>li>button{font-family:var(--font-body);font-weight:500;font-size:.78rem;color:var(--text);letter-spacing:.14em;text-transform:uppercase;background:none;border:none;cursor:pointer;padding:6px 0;display:inline-flex;align-items:center;gap:6px;transition:color .2s;}
+    .nav-links>li>a:hover,.nav-links>li>button:hover,.nav-links a.active{color:var(--champagne-dk);}
+    .dropdown{position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%);background:var(--cream);box-shadow:0 20px 50px rgba(32,38,79,.14);padding:14px;min-width:230px;display:none;z-index:120;border:1px solid var(--stone);}
+    .dropdown.wide{min-width:480px;columns:2;column-gap:8px;}
+    li.has-dropdown:hover .dropdown,li.has-dropdown:focus-within .dropdown{display:block;}
+    .dropdown a{display:block;padding:9px 14px;color:var(--text);font-size:.9rem;font-weight:500;letter-spacing:0;text-transform:none;transition:all .15s;}
+    .dropdown a:hover{background:var(--ivory);color:var(--champagne-dk);}
+    .nav-cta{display:flex;align-items:center;gap:var(--space-md);}
+    .menu-toggle{display:none;background:none;border:none;cursor:pointer;padding:6px;}
+    .menu-toggle span{display:block;width:26px;height:1.5px;background:var(--ink);margin:6px 0;}
+
+    /* ===== Hero — full-bleed editorial ===== */
+    /* ===== Hero — video-first cinematic (CSG-direction) ===== */
+    .hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;padding:var(--space-2xl) 0;background:var(--ink);}
+    .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}
+    .hero-scrim{position:absolute;inset:0;z-index:1;background:linear-gradient(to top,rgba(20,24,52,.72) 0%,rgba(20,24,52,.25) 45%,rgba(20,24,52,.08) 100%);}
+    .hero .container{position:relative;z-index:2;}
+    .hero-inner{max-width:820px;}
+    .hero .eyebrow{color:#fff;}
+    .hero .eyebrow::before{background:rgba(255,255,255,.8);}
+    .hero h1{color:#fff;font-weight:400;text-shadow:0 1px 40px rgba(20,24,52,.4);}
+    .hero .lead{color:#fff;font-weight:300;margin-top:1.5rem;max-width:600px;text-shadow:0 1px 24px rgba(20,24,52,.35);}
+    /* rotating caption line, CSG-style supporting text */
+    .hero-caption{position:absolute;right:var(--space-lg);bottom:var(--space-2xl);z-index:2;max-width:300px;text-align:right;font-family:var(--font-display);font-size:1.5rem;font-style:italic;line-height:1.3;color:#fff;text-shadow:0 1px 24px rgba(20,24,52,.5);opacity:0;transition:opacity 1s ease;}
+    .hero-caption.show{opacity:.92;}
+    @media (max-width:980px){.hero-caption{display:none;}}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2.5rem;align-items:center;}
+
+    /* Credibility — "by the numbers" band (CSG-direction) */
+    .credstrip{background:var(--ivory-dk);border-bottom:1px solid var(--stone);}
+    .credstrip .container{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-lg);padding:var(--space-xl) var(--space-lg);}
+    .cred{text-align:center;border-right:1px solid var(--stone);padding:0 var(--space-md);}
+    .cred:last-child{border-right:none;}
+    .cred .num{font-family:var(--font-display);font-size:clamp(2.6rem,4.5vw,3.6rem);font-weight:400;color:var(--ink);line-height:1;display:block;}
+    .cred .stars{color:var(--champagne);font-size:1.1rem;letter-spacing:2px;display:block;margin-bottom:.4rem;}
+    .cred .lbl{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin-top:.8rem;display:block;line-height:1.5;}
+    @media (max-width:980px){.credstrip .container{grid-template-columns:1fr 1fr;gap:var(--space-xl) var(--space-lg);}.cred:nth-child(2){border-right:none;}}
+    @media (max-width:600px){.credstrip .container{grid-template-columns:1fr;}.cred{border-right:none;border-bottom:1px solid var(--stone);padding-bottom:var(--space-lg);}.cred:last-child{border-bottom:none;}}
+
+    section{padding:var(--space-2xl) 0;}
+    .section-head{max-width:680px;margin:0 auto var(--space-xl);text-align:center;}
+
+    /* ===== Intro / philosophy — asymmetric ===== */
+    .intro .container{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-2xl);align-items:center;}
+    .intro-media{position:relative;}
+    .intro-media img{width:100%;height:600px;object-fit:cover;}
+    .intro-media .stamp{position:absolute;bottom:-40px;right:-40px;width:180px;height:180px;border-radius:50%;background:var(--champagne);color:#fff;display:grid;place-items:center;text-align:center;font-family:var(--font-display);font-size:1.15rem;line-height:1.25;padding:24px;}
+    .intro-media .stamp span{display:block;font-family:var(--font-body);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;margin-top:6px;opacity:.85;}
+    .intro-copy .eyebrow{margin-bottom:1.5rem;}
+    .intro-copy p{margin-top:1.5rem;color:var(--text-muted);}
+
+    /* ===== Differentiators — editorial numbered list ===== */
+    .diff{background:var(--ivory-dk);}
+    .diff-list{max-width:980px;margin:0 auto;}
+    .diff-row{display:grid;grid-template-columns:90px 1fr auto;gap:var(--space-lg);align-items:start;padding:var(--space-lg) 0;border-top:1px solid var(--stone);}
+    .diff-row:last-child{border-bottom:1px solid var(--stone);}
+    .diff-num{font-family:var(--font-display);font-size:2.6rem;font-weight:400;color:var(--champagne);line-height:1;}
+    .diff-row h3{margin-bottom:.5rem;}
+    .diff-row p{color:var(--text-muted);max-width:560px;}
+    .diff-tag{font-family:var(--font-body);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--champagne-dk);align-self:center;white-space:nowrap;}
+
+    /* ===== Programs — editorial cards, image-led ===== */
+    .programs .section-head{text-align:left;margin-left:0;}
+    .program-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-lg);}
+    .program-card{background:transparent;}
+    .program-card .imgwrap{overflow:hidden;}
+    .program-card img{width:100%;height:340px;object-fit:cover;transition:transform .6s ease;}
+    .program-card:hover img{transform:scale(1.04);}
+    .program-card .age{font-family:var(--font-body);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--champagne-dk);margin:1.4rem 0 .5rem;}
+    .program-card h3{margin-bottom:.6rem;}
+    .program-card p{color:var(--text-muted);font-size:.98rem;margin-bottom:1.2rem;}
+
+    /* ===== Quote — full bleed editorial ===== */
+    .quote{background:var(--ink);color:#fff;text-align:center;}
+    .quote .container{max-width:900px;}
+    .quote .eyebrow{color:var(--champagne);}
+    .quote blockquote{font-family:var(--font-display);font-size:clamp(1.8rem,3.6vw,3rem);font-weight:400;line-height:1.3;color:#fff;}
+    .quote .stars{color:var(--champagne);font-size:1.1rem;letter-spacing:3px;margin:var(--space-lg) 0 .6rem;}
+    .quote cite{font-style:normal;font-family:var(--font-body);font-weight:600;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;}
+    .quote .sub{display:block;color:rgba(255,255,255,.6);font-size:.72rem;letter-spacing:.14em;margin-top:6px;}
+
+    /* ===== Locate + form ===== */
+    .locate{background:var(--cream);}
+    .locate-wrap{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-2xl);align-items:start;}
+    .locate .section-head{text-align:left;margin:0 0 var(--space-lg);}
+    .loc-selector label{display:block;font-family:var(--font-body);font-weight:600;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);margin-bottom:.7rem;}
+    select,input{width:100%;padding:16px 18px;border:1px solid var(--stone);border-radius:var(--radius);font-family:var(--font-body);font-size:1rem;color:var(--text);background:var(--ivory);transition:border-color .2s;}
+    select:focus,input:focus{outline:none;border-color:var(--champagne);}
+    .loc-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:1.4rem;}
+    .loc-chip{border:1px solid var(--stone);background:transparent;border-radius:var(--radius);padding:10px 18px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--text);transition:all .2s;}
+    .loc-chip:hover{border-color:var(--champagne);color:var(--champagne-dk);}
+    .tour-form{background:var(--ivory);border:1px solid var(--stone);padding:var(--space-lg);}
+    .tour-form h3{margin-bottom:1.4rem;}
+    .form-field{margin-bottom:1.1rem;}
+    .form-field label{display:block;font-family:var(--font-body);font-weight:600;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.5rem;color:var(--text-muted);}
+    .form-note{font-size:.82rem;color:var(--text-muted);margin-top:1rem;}
+
+    /* ===== Footer ===== */
+    footer.site{background:var(--ink);color:#fff;padding-top:var(--space-2xl);}
+    .footer-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:var(--space-xl);}
+    footer.site h4{font-family:var(--font-body);text-transform:uppercase;letter-spacing:.2em;font-size:.72rem;margin-bottom:1.6rem;color:var(--champagne);font-weight:600;}
+    footer.site ul{list-style:none;display:flex;flex-direction:column;gap:.9rem;}
+    footer.site a{color:rgba(255,255,255,.78);font-size:.92rem;font-weight:400;}
+    footer.site a:hover{color:#fff;}
+    .footer-brand .logo{margin-bottom:1.4rem;}
+    .footer-brand .logo-mark{border-color:rgba(255,255,255,.4);color:#fff;}
+    .footer-brand .logo-text{color:#fff;}
+    .footer-brand p{color:rgba(255,255,255,.7);font-size:.95rem;max-width:340px;font-weight:300;line-height:1.7;}
+    footer address{font-style:normal;color:rgba(255,255,255,.78);font-size:.92rem;line-height:2;margin-top:1.4rem;}
+    footer address a{color:#fff;}
+    .social{display:flex;gap:12px;margin-top:1.4rem;}
+    .social a{width:42px;height:42px;border:1px solid rgba(255,255,255,.25);display:grid;place-items:center;transition:all .2s;}
+    .social a:hover{border-color:var(--champagne);background:var(--champagne);}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,.14);margin-top:var(--space-xl);padding:var(--space-md) 0;font-size:.78rem;letter-spacing:.06em;color:rgba(255,255,255,.5);text-align:center;}
+
+    /* drawer */
+    .drawer{position:fixed;inset:0;background:rgba(20,24,52,.55);z-index:200;display:none;}
+    .drawer.open{display:block;}
+    .drawer-panel{position:absolute;right:0;top:0;height:100%;width:min(360px,88vw);background:var(--ivory);padding:var(--space-lg);overflow-y:auto;}
+    .drawer-panel a{display:block;padding:14px 0;font-family:var(--font-body);font-weight:500;color:var(--text);text-transform:uppercase;font-size:.82rem;letter-spacing:.12em;border-bottom:1px solid var(--stone);}
+    .drawer-panel .sub a{text-transform:none;padding-left:1.2rem;font-weight:400;color:var(--text-muted);letter-spacing:0;}
+    .drawer-close{background:none;border:none;font-size:2rem;cursor:pointer;color:var(--ink);float:right;line-height:1;}
+    .drawer .btn{width:100%;justify-content:center;margin-top:1.2rem;}
+
+    @media (max-width:980px){
+      .nav-links,.topbar{display:none;}
+      .menu-toggle{display:block;}
+      .nav-cta .btn{display:none;}
+      .logo img{height:54px!important;}
+      .intro .container,.locate-wrap{grid-template-columns:1fr;gap:var(--space-xl);}
+      .intro-media img{height:420px;}
+      .intro-media .stamp{width:130px;height:130px;font-size:.95rem;right:-15px;bottom:-25px;}
+      .program-grid{grid-template-columns:repeat(2,1fr);}
+      .footer-grid{grid-template-columns:1fr 1fr;}
+      .cred-div{display:none;}
+    }
+    @media (max-width:600px){
+      .container{padding:0 1.4rem;}
+      .program-grid,.footer-grid{grid-template-columns:1fr;}
+      .diff-row{grid-template-columns:60px 1fr;}
+      .diff-tag{display:none;}
+      .credstrip .container{gap:var(--space-lg);}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site">
+    <div class="topbar">
+      <div class="container">
+        <div class="topbar-links">
+          <a href="/forms">Enrollment Forms</a>
+          <a href="/jobopportunities">Careers</a>
+          <a href="/franchise-opportunity">Franchise</a>
+        </div>
+        <a href="tel:+16147910500">(614) 791-0500</a>
+      </div>
+    </div>
+    <nav class="primary" aria-label="Primary">
+      <a class="logo" href="/" aria-label="The Barrington School home">
+        <img src="assets/logo-horiz-blue.png" alt="Barrington School — Where Learning Begins" style="height:42px;width:auto;display:block">
+      </a>
+      <ul class="nav-links">
+        <li><a href="/" class="active">Home</a></li>
+        <li class="has-dropdown">
+          <button aria-haspopup="true" aria-expanded="false">Locations</button>
+          <div class="dropdown wide" role="menu">
+            <a href="/dublin">Dublin</a><a href="/powell">Powell</a><a href="/hilliard">Hilliard</a>
+            <a href="/upper-arlington">Upper Arlington – North</a><a href="/kingsdale">Kingsdale</a>
+            <a href="/worthington-north">Worthington North</a><a href="/worthington-south">Worthington South</a>
+            <a href="/columbus">Columbus</a><a href="/grandview">Grandview</a>
+            <a href="/new-albany-east">New Albany East</a><a href="/new-albany-west">New Albany West</a>
+            <a href="/jerome">Jerome Village</a>
+          </div>
+        </li>
+        <li class="has-dropdown">
+          <button aria-haspopup="true" aria-expanded="false">Programs</button>
+          <div class="dropdown" role="menu">
+            <a href="/infant-classrooms">Infants</a><a href="/toddler-classrooms">Toddlers</a>
+            <a href="/preschool-classrooms">Preschool</a><a href="/prekindergarten-classrooms">Pre-Kindergarten</a>
+            <a href="/school-age-enrichment">Kindergarten Enrichment</a>
+          </div>
+        </li>
+        <li><a href="#approach">Our Approach</a></li>
+        <li><a href="/blog">Journal</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a class="btn btn-primary" href="#schedule">Schedule a Tour</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="drawer" id="drawer">
+    <div class="drawer-panel" role="dialog" aria-label="Mobile navigation">
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">&times;</button>
+      <div style="clear:both"></div>
+      <img src="assets/logomark-blue.png" alt="" width="48" height="38" style="margin:.2rem 0 1.1rem;">
+      <a href="/">Home</a>
+      <a href="#locations">Locations</a>
+      <div class="sub"><a href="/dublin">Dublin</a><a href="/powell">Powell</a><a href="/jerome">Jerome Village</a><a href="#locations">View all 12 →</a></div>
+      <a href="#programs">Programs</a>
+      <a href="#approach">Our Approach</a>
+      <a href="/blog">Journal</a>
+      <a class="btn btn-gold" href="#schedule">Schedule a Tour</a>
+      <a class="btn btn-outline" href="tel:+16147910500">(614) 791-0500</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- HERO — video-first -->
+    <section class="hero" aria-label="Welcome">
+      <video class="hero-video" autoplay muted loop playsinline poster="assets/photos/hero-home-a.jpg" aria-hidden="true">
+        <!-- Placeholder source — replace with Barrington b-roll (.mp4/.webm) on build -->
+        <source src="https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/1080/Big_Buck_Bunny_1080_10s_1MB.mp4" type="video/mp4">
+      </video>
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-inner">
+          <span class="eyebrow">Family-Owned Since 1974 · 12 Columbus Locations</span>
+          <h1>A childhood cared for, down to the smallest detail</h1>
+          <p class="lead">Organic meals from an in-house chef. A full week of enrichment. Ratios kept below the state minimum. This is simply how we care for your child at Barrington — thoughtfully, warmly, and completely, every day from six weeks to ten years.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#schedule">Schedule a Tour</a>
+            <a class="btn btn-outline-light" href="#locations">Find Your Location</a>
+          </div>
+        </div>
+      </div>
+      <p class="hero-caption" id="heroCaption" aria-hidden="true">Where every day begins with care.</p>
+    </section>
+
+    <!-- By the numbers -->
+    <div class="credstrip" aria-label="Barrington by the numbers">
+      <div class="container">
+        <div class="cred"><span class="stars" aria-hidden="true">★★★★★</span><span class="num">4.5</span><span class="lbl">Average Google rating across 77 reviews</span></div>
+        <div class="cred"><span class="num">50+</span><span class="lbl">Years family owned &amp; operated</span></div>
+        <div class="cred"><span class="num">12</span><span class="lbl">Neighborhood schools across Greater Columbus</span></div>
+        <div class="cred"><span class="num">5</span><span class="lbl">Enrichment classes included every week</span></div>
+      </div>
+    </div>
+
+    <!-- Intro / philosophy -->
+    <section class="intro">
+      <div class="container">
+        <div class="intro-media">
+          <img src="assets/photos/intro.jpg" alt="A bright, sunlit Barrington classroom where a teacher reads with a small group of children" width="800" height="900" loading="lazy">
+          <div class="stamp">Since<br>1974<span>Three generations of care</span></div>
+        </div>
+        <div class="intro-copy" id="approach">
+          <span class="eyebrow">Our Approach</span>
+          <h2>Care this considered is rare. We think it should be the standard.</h2>
+          <p>For over fifty years, Barrington has been family-owned and family-run — and it shows in the details most schools overlook. Fresh, organic food made on-site. Smaller classes than the state requires. A full week of enrichment built into every child's day.</p>
+          <p>The result is a place where children are genuinely known, gently challenged, and cared for the way you would care for them yourself.</p>
+          <a class="link-arrow" href="#approach" style="margin-top:2rem;">Discover the Barrington difference</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Differentiators — numbered editorial -->
+    <section class="diff">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">What's Included</span>
+          <h2>Exceptional care, made standard</h2>
+        </div>
+        <div class="diff-list">
+          <div class="diff-row">
+            <div class="diff-num">01</div>
+            <div><h3>Organic meals, made in-house</h3><p>A dedicated chef prepares fresh, organic, nutritious meals daily — never outsourced, never frozen. Healthy fuel for growing bodies and developing minds.</p></div>
+            <div class="diff-tag">Daily</div>
+          </div>
+          <div class="diff-row">
+            <div class="diff-num">02</div>
+            <div><h3>Diapers &amp; essentials included</h3><p>Diapers, wipes, sunscreen, and daily essentials are built into tuition. No supply lists, no surprises — just one less thing for your family to carry.</p></div>
+            <div class="diff-tag">Included</div>
+          </div>
+          <div class="diff-row">
+            <div class="diff-num">03</div>
+            <div><h3>A full week of enrichment</h3><p>Gymnastics, soccer, yoga, dance, and music — every week, woven into your child's day. Real movement, creativity, and confidence, not screen time.</p></div>
+            <div class="diff-tag">Weekly</div>
+          </div>
+          <div class="diff-row">
+            <div class="diff-num">04</div>
+            <div><h3>Ratios below the state minimum</h3><p>We keep teacher-to-child ratios lower than Ohio requires — more attention, more safety, and more genuine one-on-one moments for every child.</p></div>
+            <div class="diff-tag">Always</div>
+          </div>
+          <div class="diff-row">
+            <div class="diff-num">05</div>
+            <div><h3>A true partnership with parents</h3><p>Education and safety come first, with open communication at every stage. We share your priorities — and your child becomes part of our family.</p></div>
+            <div class="diff-tag">Every day</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs -->
+    <section class="programs" id="programs">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Our Programs</span>
+          <h2>Every stage, thoughtfully held</h2>
+        </div>
+        <div class="program-grid">
+          <article class="program-card">
+            <div class="imgwrap"><img src="assets/photos/infant.jpg" alt="Caregiver holding and reading to an infant at Barrington" width="600" height="500" loading="lazy"></div>
+            <div class="age">6 weeks – 16 months</div>
+            <h3>Infants</h3>
+            <p>Continual interaction — reading, singing, and gentle play that builds a meaningful bond between your child and our caregivers.</p>
+            <a class="link-arrow" href="/infant-classrooms">Explore</a>
+          </article>
+          <article class="program-card">
+            <div class="imgwrap"><img src="assets/photos/toddler.jpg" alt="Toddler exploring a hands-on activity in a Barrington classroom" width="600" height="500" loading="lazy"></div>
+            <div class="age">16 months – 3 years</div>
+            <h3>Toddlers</h3>
+            <p>Room to investigate and discover, with hands-on activities designed for the children in each classroom.</p>
+            <a class="link-arrow" href="/toddler-classrooms">Explore</a>
+          </article>
+          <article class="program-card">
+            <div class="imgwrap"><img src="assets/photos/preschool.jpg" alt="Preschool children engaged in a group lesson" width="600" height="500" loading="lazy"></div>
+            <div class="age">3 – 4 years</div>
+            <h3>Preschool</h3>
+            <p>Explore, discover, and grow with a curriculum that supports every learning style, in close partnership with families.</p>
+            <a class="link-arrow" href="/preschool-classrooms">Explore</a>
+          </article>
+          <article class="program-card">
+            <div class="imgwrap"><img src="assets/photos/prek.jpg" alt="Pre-K students working together on a problem-solving activity" width="600" height="500" loading="lazy"></div>
+            <div class="age">4 – 5 years</div>
+            <h3>Pre-Kindergarten</h3>
+            <p>Honing the skills built in preschool, with weekly themes tailored to each child's needs and curiosity.</p>
+            <a class="link-arrow" href="/prekindergarten-classrooms">Explore</a>
+          </article>
+          <article class="program-card">
+            <div class="imgwrap"><img src="assets/photos/enrichment.jpg" alt="School-age children playing outdoors at Barrington" width="600" height="500" loading="lazy"></div>
+            <div class="age">5 – 10 years</div>
+            <h3>Kindergarten Enrichment</h3>
+            <p>Deeper understanding in smaller peer groups, encouraging higher-level thinking and advanced problem-solving.</p>
+            <a class="link-arrow" href="/school-age-enrichment">Explore</a>
+          </article>
+          <article class="program-card" style="display:flex;flex-direction:column;justify-content:center;background:var(--ivory-dk);padding:var(--space-lg);">
+            <h3 style="margin-bottom:.8rem;">Not sure which fits?</h3>
+            <p>Tell us your child's age on your visit and we'll walk you through the right program in person.</p>
+            <a class="btn btn-outline" href="#schedule" style="align-self:flex-start;">Schedule a Tour</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote -->
+    <section class="quote">
+      <div class="container">
+        <span class="eyebrow">What Families Say</span>
+        <blockquote>"From the ownership to school leadership to the teachers themselves, everyone has been incredibly welcoming, with genuine attention and care for our son. The high-quality food, the enrichment — yoga, dance, music — and a real lesson-plan approach rather than freeform, unstructured daycare has been wonderful to see."</blockquote>
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <cite>Jerome Village Parent<span class="sub">Barrington Family · Google Review</span></cite>
+      </div>
+    </section>
+
+    <!-- Locate + form -->
+    <section class="locate" id="locations">
+      <div class="container">
+        <div class="locate-wrap">
+          <div>
+            <div class="section-head">
+              <span class="eyebrow">Find Your School</span>
+              <h2>Twelve schools, one standard of care</h2>
+              <p class="lead" style="margin-top:1rem;">Choose your neighborhood and we'll connect you directly with that school's team.</p>
+            </div>
+            <div class="loc-selector">
+              <label for="locSelect">Select a location</label>
+              <select id="locSelect" aria-label="Select a Barrington School location">
+                <option value="">Choose your neighborhood…</option>
+                <option>Dublin</option><option>Powell</option><option>Hilliard</option>
+                <option>Upper Arlington – North</option><option>Kingsdale</option>
+                <option>Worthington North</option><option>Worthington South</option>
+                <option>Columbus</option><option>Grandview</option>
+                <option>New Albany East</option><option>New Albany West</option>
+                <option selected>Jerome Village / Plain City</option>
+              </select>
+              <div class="loc-chips">
+                <a class="loc-chip" href="/dublin">Dublin</a>
+                <a class="loc-chip" href="/powell">Powell</a>
+                <a class="loc-chip" href="/jerome">Jerome Village</a>
+                <a class="loc-chip" href="/upper-arlington">Upper Arlington</a>
+                <a class="loc-chip" href="/new-albany-east">New Albany</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="tour-form" id="schedule">
+            <h3>Request a Tour</h3>
+            <div class="form-field"><label for="pname">Parent Name</label><input id="pname" type="text" autocomplete="name" placeholder="Your full name"></div>
+            <div class="form-field"><label for="pemail">Email</label><input id="pemail" type="email" autocomplete="email" placeholder="you@email.com"></div>
+            <div class="form-field"><label for="pphone">Phone</label><input id="pphone" type="tel" autocomplete="tel" placeholder="(614) 555-0123"></div>
+            <div class="form-field"><label for="page">Child's Age</label>
+              <select id="page"><option value="">Select age range</option><option>6 weeks – 16 months</option><option>16 months – 3 years</option><option>3 – 4 years</option><option>4 – 5 years</option><option>5 – 10 years</option></select>
+            </div>
+            <button class="btn btn-gold" style="width:100%;justify-content:center;" type="button" onclick="alert('Demo form — wired to WPForms/Gravity Forms on build.');">Request My Tour</button>
+            <p class="form-note">We respond within one business day. We never share your information.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo-horiz-white.png" alt="Barrington School — Where Learning Begins" style="height:46px;width:auto;display:block;margin-bottom:1.4rem;">
+          <p>Family-owned daycare and preschool with over fifty years of experience, caring for children six weeks to ten years across Greater Columbus.</p>
+          <address>
+            <a href="mailto:info@barringtonschool.com">info@barringtonschool.com</a><br>
+            <a href="tel:+16147910500">(614) 791-0500</a><br>
+            Serving Dublin, Powell, Hilliard, Upper Arlington, Worthington, Columbus, Grandview, New Albany &amp; Jerome Village
+          </address>
+          <div class="social">
+            <a href="https://www.facebook.com/TheBarringtonSchool/" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.7-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.5V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg></a>
+            <a href="https://www.instagram.com/barringtonschooljerome/" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff" stroke="none"/></svg></a>
+          </div>
+        </div>
+        <div><h4>Locations</h4><ul><li><a href="/dublin">Dublin</a></li><li><a href="/powell">Powell</a></li><li><a href="/hilliard">Hilliard</a></li><li><a href="/upper-arlington">Upper Arlington</a></li><li><a href="/jerome">Jerome Village</a></li><li><a href="/locations">View all 12 →</a></li></ul></div>
+        <div><h4>Programs</h4><ul><li><a href="/infant-classrooms">Infants</a></li><li><a href="/toddler-classrooms">Toddlers</a></li><li><a href="/preschool-classrooms">Preschool</a></li><li><a href="/prekindergarten-classrooms">Pre-Kindergarten</a></li><li><a href="/school-age-enrichment">Enrichment</a></li></ul></div>
+        <div><h4>Company</h4><ul><li><a href="#approach">Our Approach</a></li><li><a href="/jobopportunities">Careers</a></li><li><a href="/franchise-opportunity">Franchise</a></li><li><a href="/forms">Enrollment Forms</a></li><li><a href="/blog">Journal</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© 2025 The Barrington School. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    const header=document.querySelector('header.site');
+    window.addEventListener('scroll',()=>header.classList.toggle('scrolled',window.scrollY>40));
+    const drawer=document.getElementById('drawer'),toggle=document.getElementById('menuToggle'),close=document.getElementById('drawerClose');
+    toggle.addEventListener('click',()=>{drawer.classList.add('open');toggle.setAttribute('aria-expanded','true');});
+    function closeDrawer(){drawer.classList.remove('open');toggle.setAttribute('aria-expanded','false');}
+    close.addEventListener('click',closeDrawer);
+    drawer.addEventListener('click',e=>{if(e.target===drawer)closeDrawer();});
+    drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeDrawer));
+
+    // Rotating hero captions (CSG-style supporting lines)
+    const cap=document.getElementById('heroCaption');
+    const lines=["Where every day begins with care.","Organic meals, made fresh in-house.","A full week of enrichment, included.","Smaller classes. Closer attention.","Family-owned for three generations."];
+    let ci=0;
+    if(cap){
+      setTimeout(()=>cap.classList.add('show'),800);
+      setInterval(()=>{
+        cap.classList.remove('show');
+        setTimeout(()=>{ci=(ci+1)%lines.length;cap.textContent=lines[ci];cap.classList.add('show');},1000);
+      },5000);
+    }
+  </script>
+</body>
+</html>
